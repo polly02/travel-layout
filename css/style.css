@@ -355,6 +355,42 @@ main {
     height: 542px;
 }
 
+footer {
+    background-color: #F9F9FB;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.first-block {
+    width: 391px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.first-block p {
+    font: 300 18px 'Mulish';
+    color: #848484;
+    /* padding-top: 30px; */
+}
+
+footer h2 {
+    font: 700 19px 'Mulish';
+    color: #000000;
+}
+
+footer ul li {
+    font: 300 18px 'Mulish';
+    color: #848484;
+    padding-top: 20px;
+}
+
+footer ul li:hover {
+    color: #B8BECD;
+}
+
 @media screen and (max-width:1120px) {
     header {
         width: 950px;
@@ -407,6 +443,10 @@ main {
         height: 342px;
         background-size: contain;
     }
+
+    .first-block {
+        width: 270px;
+    }
 }
 
 @media screen and (max-width: 970px) {
@@ -456,7 +496,8 @@ main {
         flex-direction: column;
     }
 
-    .img-3, .img-2 {
+    .img-3,
+    .img-2 {
         display: none;
     }
 
@@ -472,7 +513,17 @@ main {
         width: 420px;
     }
 
-    .downld-btn{
+    .downld-btn {
         align-self: center;
+    }
+
+    footer h2,
+    ul {
+        display: none;
+    }
+
+    .first-block {
+        width: 70%;
+        padding-left: 150px;
     }
 }
